@@ -1,47 +1,170 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mi página web</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Mi Portafolio Personal</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    /* Estilos adicionales para colores */
+    body {
+      background-image: url("openai-background.jpg");
+      background-size: cover;
+      color: #00ff00; /* verde neón */
+      font-family: "Matrix Code NFI", monospace; /* Fuente estilo "Matrix" */
+    }
+    header {
+      background-color: #1f7bbf;
+      padding: 20px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    h1 {
+      color: #fff;
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+    #header-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+    #hero {
+      background-color: #000;
+      text-align: center;
+      padding: 50px 0;
+    }
+    #hero h2 {
+      color: #00ff00;
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+    #hero p {
+      color: #00ff00;
+      margin-bottom: 20px;
+    }
+    #about {
+      background-color: #333;
+      padding: 50px;
+      text-align: center;
+    }
+    #about h2 {
+      color: #00ff00;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    #about p {
+      color: #00ff00;
+      margin-bottom: 20px;
+    }
+    #contact {
+      background-color: #000;
+      padding: 50px;
+      text-align: center;
+    }
+    #contact h2 {
+      color: #00ff00;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    #contact ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    #contact li {
+      margin: 0 10px;
+    }
+    #contact li a {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #00ff00;
+      text-align: center;
+      line-height: 50px;
+    }
+    #contact li a img {
+      width: 30px;
+      height: 30px;
+    }
+    #contact .email {
+      margin-top: 20px;
+      color: #00ff00;
+    }
+    #projects {
+      background-color: #1f7bbf;
+      padding: 50px;
+      text-align: center;
+    }
+    #projects h2 {
+      color: #fff;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    #certifications {
+      background-color: #333;
+      padding: 50px;
+      text-align: center;
+    }
+    #certifications h2 {
+      color: #fff;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    footer {
+      background-color: #1f7bbf;
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Bienvenido a mi página web</h1>
-    </header>
+  <header>
+    <h1>Mi Portafolio Personal</h1>
+    <img id="header-img" src="https://media.licdn.com/dms/image/C4E03AQEp3ttYjRZJzg/profile-displayphoto-shrink_800_800/0/1643641967997?e=2147483647&v=beta&t=lo81ObCzeUbt-O3ntC2TPkAkk0qtavXAGCfgvFxIH18" alt="Foto de perfil">
+  </header>
 
-    <nav>
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Acerca de</a></li>
-            <li><a href="#">Proyectos</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
-    </nav>
+  <section id="hero">
+    <h2>Hola, soy Juan Antonio Llanos García</h2>
+    <p>Un apasionado de la programación y en constante búsqueda de conocimientos.</p>
+    <a href="#projects" class="button">Proyectos</a>
+    <a href="#certifications" class="button">Certificaciones</a>
+  </section>
 
-    <main>
-        <h2>Sobre mí</h2>
-        <p>Soy un aprendiz en desarrollo de páginas web.</p>
-    </main>
+  <section id="about">
+    <h2>Sobre mí</h2>
+    <p>Soy un entusiasta del desarrollo de software y estoy enfocado en aprender de manera autónoma a través de plataformas como Platzi, Udemy, IBM y OpenAI. Mi objetivo es expandir mis conocimientos en tecnologías como Python, Java e Inteligencia Artificial.</p>
+    <p>Además, tengo experiencia en ingeniería industrial como Ingeniero de Procesos y como Ingeniero de Proyectos. También he participado en proyectos de voluntariado en el Senado de la República en el campo de Administración Ambiental. Soy un inversor junior y aprendiz en mercados bursátiles y el mundo de cripto y blockchain.</p>
+  </section>
 
-    <section id="projects">
-        <h2>Mis proyectos</h2>
-        <ul>
-            <li>Proyecto 1</li>
-            <li>Proyecto 2</li>
-            <li>Proyecto 3</li>
-        </ul>
-    </section>
+  <section id="contact">
+    <h2>Contacto</h2>
+    <ul>
+      <li><a href="https://www.linkedin.com/in/juanantoniollanosgarcia/"><img src="linkedin-logo.png" alt="LinkedIn"></a></li>
+      <li><a href="https://wa.me/3008566610"><img src="whatsapp-logo.png" alt="WhatsApp"></a></li>
+    </ul>
+    <p class="email">Correo electrónico: llanos@utp.edu.co</p>
+  </section>
 
-    <section id="contact">
-        <h2>Contacto</h2>
-        <p>Twitter: <a href="https://twitter.com/juanll">@juanll</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/juanantoniollanosgarcia/">Juan Antonio Llanos García</a></p>
-        <p>Teléfono: 3008566610</p>
-    </section>
+  <section id="projects">
+    <h2>Proyectos</h2>
+    <!-- Aquí puedes agregar una lista de tus proyectos -->
+  </section>
 
-    <footer>
-        <p>Derechos de autor &copy; 2023. Todos los derechos reservados.</p>
-    </footer>
+  <section id="certifications">
+    <h2>Certificaciones</h2>
+    <!-- Aquí puedes agregar una lista de tus certificaciones -->
+  </section>
+
+  <footer id="footer">
+    © 2023 Mi Portafolio Personal. Todos los derechos reservados.
+  </footer>
 </body>
 </html>
-
